@@ -17,7 +17,7 @@ Installs the chrony package.
 
 ``chrony.config``
 -----------------
-This state manages the file ``chrony.conf`` under ``/etc`` (template found in "chrony/files"). The configuration is populated by values in "chrony/map.jinja", which are based on the package's default values (for RedHat, Debian and Arch family distributions), and are overridden by values of the same name in pillar.
+This state manages the file ``chrony.conf`` under ``/etc`` (template found in "chrony/files"). The configuration is populated by values in "chrony/map.jinja" based on the package's default values (and RedHat, Debian, Suse and Arch family distribution specific values), which can then be overridden by values of the same name in pillar.
 
 ``chrony.removed``
 -----------------
