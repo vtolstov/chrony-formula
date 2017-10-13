@@ -1,11 +1,10 @@
 chrony:
-  config:
-    ntpservers:
-      - 'ntp0.nl.net'
-      - 'ntp1.nl.net'
-      - 'ntp2.nl.net'
-      - 'ntp.xs4all.nl'
-      - '0.nl.pool.ntp.org'
-      - '1.nl.pool.ntp.org'
-      - '2.nl.pool.ntp.org'
-      - '3.nl.pool.ntp.org'
+  ntpservers:
+    - 'ntp0.nl.net'
+    - 'ntp1.nl.net'
+    - 'ntp2.nl.net'
+    - 'ntp.xs4all.nl'
+    - '0.nl.pool.ntp.org'
+    - '1.nl.pool.ntp.org'
+    - '2.nl.pool.ntp.org'
+    - '3.nl.pool.ntp.org'
