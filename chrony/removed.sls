@@ -1,4 +1,4 @@
-{% from "chrony/map.jinja" import chrony with context %}
+{% from slspath+"/map.jinja" import chrony with context %}
 
 chrony_removed:
   service.dead:
