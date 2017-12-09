@@ -4,7 +4,7 @@ chrony:
   package: chrony
   service: chronyd
   config: /etc/chrony.conf
-  config_src: salt://chrony/files/chrony_config
+  config_src: salt://{{ slspath }}/files/chrony_config
   ntpservers:  [ '0.us.pool.ntp.org',
                  '1.us.pool.ntp.org',
                  '2.us.pool.ntp.org',

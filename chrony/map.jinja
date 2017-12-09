@@ -1,6 +1,6 @@
 {## start with defaults from defaults.yaml ##}
-{% import_yaml "chrony/defaults.yaml" as defaults %}
-{% import_yaml "chrony/osmap.yaml" as osmap %}
+{% import_yaml slspath+"/defaults.yaml" as defaults %}
+{% import_yaml slspath+"/osmap.yaml" as osmap %}
 
 {% set chrony = salt['grains.filter_by'](
     defaults,

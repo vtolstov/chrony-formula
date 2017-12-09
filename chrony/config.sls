@@ -1,13 +1,15 @@
-{% from "chrony/map.jinja" import chrony with context %}
+{% from slspath+"/map.jinja" import chrony with context %}
 
 include:
-  - chrony
+  - .init
 
 chrony_config:
   file.managed:
     - name: {{ chrony.config }}
     - source: {{ chrony.config_src }}
     - template: jinja
+    - defaults:
+        slspath: {{ slspath|yaml_encode }}
     - user: root
     - mode: 644
     - watch_in:
