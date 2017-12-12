@@ -1,7 +1,7 @@
 {% from slspath+"/map.jinja" import chrony with context %}
 
 include:
-  - .init
+  - chrony
 
 chrony_config:
   file.managed:
